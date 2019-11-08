@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header,
+footer {
+  background: #7dbfff;
+  color: #060700;
+}
+
+main {
+  background: #f9faff;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
