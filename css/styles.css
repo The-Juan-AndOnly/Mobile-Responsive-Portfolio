@@ -1,13 +1,3 @@
-/* CSS Variables */
-:root {
-  --primary-font-family: 'Roboto', sans-serif;
-  --secondary-font-family: 'Montserrat', sans-serif;
-  --primary-font-color: #303030;
-  --secondary-font-color: #595959;
-  --primary-background-color: #b8ffbe;
-  --secondary-background-color: #8dddff;
-}
-
 /* Global Styling */
 * {
   box-sizing: border-box;
@@ -17,13 +7,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: var(--primary-font-family);
+  font-family: 'Roboto', sans-serif;
   line-height: 1.4;
 }
 
 a {
   text-decoration: none;
-  color: var(--primary-font-color);
+  color: #303030;
 }
 
 a:hover {
@@ -55,7 +45,7 @@ li {
 }
 
 .title {
-  font-family: var(--secondary-font-family);
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   text-align: center;
   margin: 2em 0;
@@ -65,7 +55,7 @@ li {
 
 /* Header Styling */
 header {
-  background: var(--secondary-background-color);
+  background: #8dddff;
 }
 
 header .header-wrapper {
@@ -74,7 +64,7 @@ header .header-wrapper {
 }
 
 header .header__title {
-  font-family: var(--secondary-font-family);
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
@@ -92,7 +82,7 @@ header .list__item {
   background: #efefef;
   border: 1px solid gray;
   text-transform: uppercase;
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .list__item:hover {
@@ -120,8 +110,8 @@ header .profile__info {
 
 #portfolio .project {
   margin: 2rem 0;
-  background: var(--primary-background-color);
-  color: var(--secondary-font-color);
+  background: #b8ffbe;
+  color: #595959;
 }
 
 #portfolio .project__title {
@@ -137,7 +127,7 @@ header .profile__info {
 /* Skills Section */
 
 #skills {
-  background: var(--secondary-background-color);
+  background: #8dddff;
   padding: 1em;
 }
 .skills-wrapper {
