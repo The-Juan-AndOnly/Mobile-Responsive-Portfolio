@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
-  --primary-font-family: 'Montserrat', sans-serif;
-  --secondary-font-family: 'Roboto', sans-serif;
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Montserrat', sans-serif;
   --primary-font-color: #303030;
   --secondary-font-color: #595959;
   --primary-background-color: #b8ffbe;
@@ -11,6 +11,10 @@
 /* Global Styling */
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: var(--primary-font-family);
@@ -30,4 +34,113 @@ img {
   width: 90%;
   margin: 0 auto;
 }
+
+/* Text Align helper class */
+.ta {
+  text-align: center;
+}
+
+li {
+  font-size: 1rem;
+  /* background: red;
+  border: 1px solid black; */
+  padding: 0.5em;
+  margin: 0.2em;
+  border-radius: 5px;
+}
+
 /* Header Styling */
+header {
+  background: var(--secondary-background-color);
+}
+
+header .header__title {
+  font-family: var(--secondary-font-family);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5em;
+  margin: 0 0 0.5em;
+}
+
+nav {
+  margin-bottom: 2em;
+}
+
+header .list {
+  text-align: center;
+}
+
+.list__item {
+  background: lightcoral;
+  border: 1px solid black;
+}
+
+header .list__item a:hover {
+  cursor: pointer;
+}
+
+.profile__img-container {
+  width: 200px;
+  margin: 0 auto 2em;
+}
+
+.profile__info {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0 0 2em;
+  text-align: center;
+}
+
+/* Portfolio Section Styling */
+
+.title {
+  font-family: var(--secondary-font-family);
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 2em 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.project {
+  margin: 2rem 0;
+  background: var(--primary-background-color);
+  color: var(--secondary-font-color);
+}
+
+.project__title {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1em;
+}
+.project__info {
+  text-align: center;
+  padding: 0 0.2em 1em;
+  font-weight: 300;
+}
+
+/* Contact Section */
+
+#contact {
+  background: #efefef;
+  padding: 1em 0;
+}
+
+.contact__info {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+/* Footer Styling */
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  padding: 1.5rem 0.5em;
+  font-weight: 700;
+}
+
+.backToTop {
+  text-transform: uppercase;
+}

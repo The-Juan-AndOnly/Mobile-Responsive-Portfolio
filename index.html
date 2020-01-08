@@ -25,12 +25,13 @@
           </ul>
         </nav>
         <div class="profile">
-          <img
-            class="profile__img"
-            src="images/responsive-layout-profile.png"
-            alt="responve picture image"
-          />
-
+          <div class="profile__img-container">
+            <img
+              class="profile__img"
+              src="images/responsive-layout-profile.png"
+              alt="responve picture image"
+            />
+          </div>
           <p class="profile__info">
             Hi! I'm a front end developer who loves responsive design and css. I
             recently finished a degree in front-end web development at Treehouse
@@ -41,78 +42,80 @@
     </header>
     <section id="portfolio">
       <div class="container">
-        <h2>Portfolio</h2>
-        <div>
+        <h2 class="title">Portfolio</h2>
+        <div class="project">
           <img src="images/portfolio-1.png" />
-          <h3>Marketing Page</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            non, similique sint consectetur ut magni provident? Recusandae vitae
-            nobis quod?
+          <h3 class="project__title">Marketing Page</h3>
+          <p class="project__info">
+            This project shows the front page of a marketing website meant for a
+            specific business I'm interested in.
           </p>
         </div>
-        <div>
+        <div class="project">
           <img src="images/portfolio-2.png" />
-          <h3>Search Page</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            non, similique sint consectetur ut magni provident? Recusandae vitae
-            nobis quod?
+          <h3 class="project__title">Search Page</h3>
+          <p class="project__info">
+            This project searches through a specific database to find
+            information that the user is trying to look up.
           </p>
         </div>
-        <div>
-          <img />
-          <h3>Travel App</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            non, similique sint consectetur ut magni provident? Recusandae vitae
-            nobis quod?
+        <div class="project">
+          <img src="images/portfolio-3.png" />
+          <h3 class="project__title">Travel App</h3>
+          <p class="project__info">
+            This project compares travel times based on different transportation
+            methods and tells you the best one.
           </p>
         </div>
-        <div>
-          <img />
-          <h3>Map of Favorte Spots</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            non, similique sint consectetur ut magni provident? Recusandae vitae
-            nobis quod?
+        <div class="project">
+          <img src="images/portfolio-4.png" />
+          <h3 class="project__title">Map of Favorte Spots</h3>
+          <p class="project__info">
+            This project uses mapping apis to plot points for my favorite spots
+            in the city for a do-it-yourself walking tour.
           </p>
         </div>
-        <div>
-          <img />
-          <h3>Photo Gallery</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            non, similique sint consectetur ut magni provident? Recusandae vitae
-            nobis quod?
+        <div class="project">
+          <img src="images/portfolio-5.png" />
+          <h3 class="project__title">Photo Gallery</h3>
+          <p class="project__info">
+            This project shows pictures from a recent trip to the viewer and
+            allows them to easily navigate through photos.
           </p>
         </div>
-        <div>
-          <img />
-          <h3>Calculator</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            non, similique sint consectetur ut magni provident? Recusandae vitae
-            nobis quod?
+        <div class="project">
+          <img src="images/portfolio-6.png" />
+          <h3 class="project__title">Calculator</h3>
+          <p class="project__info">
+            Someone can enter in the numbers they want, and press the big blue
+            button and get the result.
           </p>
         </div>
       </div>
     </section>
-    <!--<section id="contacts" class="contact__section">
-      <h2>Contact</h2>
-      <p>
-        If you're interested in chatting or want more information ablout what
-        I've been working on, I'd love to hear from you!
-      </p>
-      <ul>
-        <li>Phone: <span class="text__bold">1 (111) 111-1111</span></li>
-        <li>Email: <span class="text__bold">email@yoursite.com</span></li>
-      </ul>
+    <section id="contact">
+      <div class="container">
+        <h2 class="title">Contact</h2>
+        <p class="contact__info">
+          If you're interested in chatting or want more information ablout what
+          I've been working on, I'd love to hear from you!
+        </p>
+        <ul>
+          <li class="ta">
+            Phone: <span class="text__bold">1 (111) 111-1111</span>
+          </li>
+          <li class=" ta">
+            Email:
+            <span class="text__bold"
+              ><a href="mailto:email@yoursite.com">email@yoursite.com</a></span
+            >
+          </li>
+        </ul>
+      </div>
     </section>
     <footer>
       <h3>Student Name</h3>
       <a href="#" class="backToTop">Back to top</a>
     </footer>
-    -->
   </body>
 </html>
