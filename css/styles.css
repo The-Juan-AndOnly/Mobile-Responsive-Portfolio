@@ -134,6 +134,40 @@ header .profile__info {
   padding: 0 0.2em 1em;
   font-weight: 300;
 }
+/* Skills Section */
+
+#skills {
+  background: var(--secondary-background-color);
+  padding: 1em;
+}
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.skills {
+  width: 200px;
+  height: 200px;
+  margin: 1em auto;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fa-style {
+  font-size: 6em;
+  margin-bottom: 1rem;
+}
+
+.fa-js {
+  color: yellow;
+}
+.fa-html5 {
+  color: orangered;
+}
+.fa-css3-alt {
+  color: blue;
+}
 
 /* Contact Section */
 
@@ -200,6 +234,16 @@ footer .page-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+  }
+
+  .skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .fa-style {
+    font-size: 8em;
   }
 
   .contact-wrapper {
